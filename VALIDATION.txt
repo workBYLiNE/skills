@@ -1,0 +1,17 @@
+Validation performed 2026-11-17. Packaging/structure checks only; no model, external API, GitHub workflow or client installation executed.
+
+$ python3 scripts/validate_repo.py
+PASS: 3 skill packages; local links, metadata, examples and 9 evaluation cases checked.
+exit=0
+
+$ python3 -m unittest discover -s tests -v
+test_boundary_cases_cover_all_skills (test_repository.RepositoryTests.test_boundary_cases_cover_all_skills) ... ok
+test_examples_are_labeled (test_repository.RepositoryTests.test_examples_are_labeled) ... ok
+test_repository_validation (test_repository.RepositoryTests.test_repository_validation) ... ok
+test_validator_rejects_broken_links (test_repository.RepositoryTests.test_validator_rejects_broken_links) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.009s
+
+OK
+exit=0
