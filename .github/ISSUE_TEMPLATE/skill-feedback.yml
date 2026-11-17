@@ -1,0 +1,29 @@
+name: Skill feedback
+description: Report a problem with a synthetic example
+labels: [feedback]
+
+body:
+  - type: markdown
+    attributes:
+      value: >
+        Do not include personal records, confidential documents,
+        credentials, or private product logic.
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Skill, synthetic input, and actual output
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior and why
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Assistant/client and model version, if known
